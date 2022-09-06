@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script defer type="text/javascript" src="js/app.js"></script>
+    <title>MUNDANO</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <h1 class="header__logo">
+        <a class="header__logo--link" href="">mundano</a>
+      </h1>
+      <div class="header__section">
+        <ul class="header__section--lang">
+          <li>ESP</li>
+          <li>ENG</li>
+        </ul>
+
+        <button class="header__button burgers">
+          <label class="burger burger2" for="burger2">
+            <input class="hidden span-burger"  id="burger2"/><span class="span"></span>
+          </label>
+        </button>
+
+       
+
+        
+      </div>    
+    </header>
+
+    <nav class="header__navbar">
+      <ul class="header__navbar--lista">
+        <li class="header__navbar--item"  data-text="INICIO">
+          <a class="header__navbar--a" href="#inicio">INICIO</a>
+        </li>
+        <li class="header__navbar--item"  data-text="CONOCENOS">
+          <a class="header__navbar--a" href="#nosotros">CONOCENOS</a>
+        </li>
+        <li class="header__navbar--item"  data-text="PROYECTOS">
+          <a class="header__navbar--a a" href="#proyecto">PROYECTOS</a>
+        </li>
+        <li class="header__navbar--item" data-text="PORTAFOLIO">
+          <a class="header__navbar--a"  href="#portafolio">PORTAFOLIO</a>
+        </li>
+        <li class="header__navbar--item"  data-text="CONTACTO">
+          <a class="header__navbar--a" href="#contacto">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+
+   <section class="home" id="inicio">
+      <a href="#nosotros" class="home__scroll">Scroll</a>
+      <div class="cursor"></div>
+      <div class="cursordos"></div>
+    </section>
+ 
+    <section class="nosotros" id="nosotros">
+      <img class="nosotros__img" src="img/proyecto-1.jpg" alt="" />
+      <article class="nosotros__texto">
+        <h2>Nuestra Historia</h2>
+        <h3>¿Nos Atrevemos?</h3>
+        <p>
+          Todos tenemos grandes sueños que, probablemente, nunca intentaremos
+          cumplir; pero hay que intentarlo. Este fue el mensaje que nos impulsó
+          cuando descubrimos que se traspasaba un local en la zona mas bonita de
+          Madrid de la cual nos enamoramos a primera vista. <br /><br />
+          Así fue como nos atrevimos y en un pequeño local en el barrio
+          Salvador, con mucha incertidumbre pero muchísimas más ganas de cumplir
+          un sueño nació Aboca Restobar.<br />
+          <br />
+          Bastaron un par de recetas, mucha creatividad e ilusión para que en
+          2016 Aboca Restobar empezara a elaborar sus deliciosas pizzas,
+          creativas crepes y perritos gourmet.<br />
+          <br />
+          Como es normal no siempre todo fue tan fácil, fueron unos años de
+          aprendizaje, aciertos y desaciertos que finalmente nos llevaron a
+          hacer unas de las mejores pizzas de Madrid.
+        </p>
+      </article>
+    </section>
+
+    <section class="proyectos" id="proyecto">
+      <h2 class="proyectos__titulo">Proyectos</h2>
+      <div class="proyectos__grupo" id="hola">
+        <div class="padding">
+          <img
+            class="proyectos__grupo--imagen"
+            src="img/proyecto-1.jpg"
+            alt=""
+          />
+          <p class="proyectos__grupo--parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            cumque saepe ipsum magnam alias suscipit repellendus, dolore
+            delectus
+          </p>
+        </div>
+        <div  class="padding">
+          <img
+            class="proyectos__grupo--imagen"
+            src="img/proyecto-2.jpg"
+            alt=""
+          />
+          <p class="proyectos__grupo--parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            cumque saepe ipsum magnam alias suscipit repellenduss
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2 class="contacto__titulo">Contacto</h2>
+      <p class="contacto__parrafo">
+        Si tienes alguna consulta o sugerencia, no dudes en ponerte en contacto
+        con nosotros. Estaremos encantados de atenderte.<br />Para reservas por
+        favor utiliza el módulo de reservas que esta más arriba.
+      </p>
+      <form class="contacto__formulario">
+        <div class="contacto__formulario--dato">
+          <div class="contacto__formulario--dato--name">
+            <input type="text" name="nombre" placeholder="Nombre" />
+          </div>
+          <div class="contacto__formulario--dato--email">
+            <input type="email" name="correo" placeholder="Email" />
+          </div>
+        </div>
+        <div class="contacto__formulario--asunto">
+          <input type="text" name="asunto" placeholder="Asunto" />
+        </div>
+        <div class="contacto__formulario--mensaje">
+          <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
+        </div>
+        <input class="contacto__formulario--boton" type="submit" />
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <span class="footer__textp">Brayan Cardenas</span>
+    </footer>
+
+  </body>
+</html>
